@@ -4,7 +4,6 @@
 运行示例代码：
 
 ```
-$ gradle clean build
-$ cd target/classes/java/main
-$ java -Xms20m -Xmx20m -XX:+HeapDumpOnOutOfMemoryError org.fenixsoft.jvm.chapter2.HeapOOM
+$ javac -d "target/classes" src/org/fenixsoft/jvm/chapter2/HeapOOM.java
+$ java -cp "target/classes" -Xms20m -Xmx20m -XX:+HeapDumpOnOutOfMemoryError org.fenixsoft.jvm.chapter2.HeapOOM
 ```
